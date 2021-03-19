@@ -1,9 +1,6 @@
 def comparador(s):
-    val = 0
-    st_l = []
-
-    if len(s) not in range(0, 256):
-        raise ValueError('string out of range')
+    val : int = 0
+    st_l : list = []
 
     for c in s:
         if ord(c) != ord(' '):
@@ -22,7 +19,7 @@ def comparador(s):
             st_l = st_l[1:-1]
     return 1   
 
-s = eval(input("Escreva uma frase?\n"))
+s = input()
 print(comparador(s))
 
 
