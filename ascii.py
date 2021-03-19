@@ -1,7 +1,10 @@
 def comparador(s):
     val = 0
     st_l = []
-    
+
+    if len(s) not in range(0, 256):
+        raise ValueError('string out of range')
+
     for c in s:
         if ord(c) != ord(' '):
             st_l += [c]  
