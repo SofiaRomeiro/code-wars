@@ -16,7 +16,7 @@ def comparador(s):
         while len(st_l) > 1:
             if st_l[0] != st_l[-1]:
                 return 0
-            st_l = st_l[1:-1]
+        st_l = st_l[1:-1]
     return 1   
 
 s = input()
